@@ -19,9 +19,9 @@ The AML tool can be installed locally on the host machine while the Ontology Ali
 
  Run AML's user interface
 
-    ```
+    
     $ java -jar AgreementMakerLight.jar
-    ```
+    
 
 1) Download the two ontologies you want to align.
 
@@ -34,7 +34,15 @@ The AML tool can be installed locally on the host machine while the Ontology Ali
     - After reviewing, go to Filter > Remove Incorrect Mappings in AML and apply this filter.
     - Save the resulting alignment (RDF file with only the correct mappings).
 
-## **Running the Docker Container:**
+## **Aligning the ontologies:**
+
+This step involves the utilization of the mapping file produced from AML, in order to actually perform the changes to the target ontology.
+
+ **Prerequisites**
+
+Ensure that Docker is installed on the host machine.
+
+**Running the Docker Container**
 
 First navigate to the folder containing the dockerfile and yaml files, and then use the following commands to set up the image and employ the container:
 
