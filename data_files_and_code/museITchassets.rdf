@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/museITchassets#"
+     xml:base="http://www.semanticweb.org/museITchassets"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:museITchassets="http://www.semanticweb.org/museITchassets#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/museITchassets">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/museITchassets2.0"/>
+        <rdfs:label>Cultural Heritage Assets Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#belongsToCollection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#belongsToCollection">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/museITchassets#containsAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#Collection"/>
+        <rdfs:comment>Specifies that a CulturalHeritageAsset belongs to a Collection.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#containsAsset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#containsAsset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#Collection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:comment>Specifies that a Collection contains a CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasConservationState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasConservationState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#ConservationState"/>
+        <rdfs:comment>Specifies the ConservationState of a CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasCreator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#Creator"/>
+        <rdfs:comment>Specifies the Creator who created a CulturalHeritageAsset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasCulturalContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasCulturalContext">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#CulturalContext"/>
+        <rdfs:comment>Specifies the CulturalContext of a CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasCulturalHeritageProfessional -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasCulturalHeritageProfessional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageProfessional"/>
+        <rdfs:comment>Specifies the CulturalHeritageProfessional associated with a CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasKeyword">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#Language"/>
+        <rdfs:comment>Specifies the Language associated with an CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#Location"/>
+        <rdfs:comment>Specifies the Location of a CulturalHeritageAsset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasMusicGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasMusicGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/museITchassets#hasCulturalContext"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#Video"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#MusicGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasPerformer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasPerformer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasPreservationTechnique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasPreservationTechnique">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#PreservationTechnique"/>
+        <rdfs:comment>Specifies the PreservationTechnique used for a CulturalHeritageAsset.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasVenue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#hasVenue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#placedInEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/museITchassets#placedInEnvironment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/museITchassets#VirtualRealityEnvironment"/>
+        <rdfs:comment>Specifies that a VRExperience takes place in a VirtualRealityEnvironment.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasCreationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/museITchassets#hasCreationDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Represents the creation date of a cultural heritage asset.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/museITchassets#hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the description of a cultural heritage asset.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/museITchassets#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/museITchassets#hasTitle">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the title or name of a cultural heritage asset.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Collection">
+        <rdfs:comment>Represents a group of cultural heritage assets that are curated and managed together, such as a museum collection or an archival collection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#ConservationState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#ConservationState">
+        <rdfs:comment>Represents the condition or state of a cultural heritage asset. It can have subclasses such as:
+- Well-preserved
+- Partially damaged
+- Restored
+- Fragile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Creator">
+        <rdfs:comment>Represents the creator or artist associated with a cultural heritage asset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#CulturalContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#CulturalContext">
+        <rdfs:comment>Represents the historical, social, or cultural context in which a cultural heritage asset was created or is being used.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#CulturalHeritageAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset">
+        <rdfs:comment>Represents any type of cultural heritage asset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#CulturalHeritageProfessional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#CulturalHeritageProfessional">
+        <rdfs:comment>Represents individuals who specialize in the study, preservation, or management of cultural heritage assets, such as archaeologists, curators, conservators, and historians.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Folklore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Folklore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#IntangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#IntangibleAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#IntangibleAsset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:comment>Represents cultural heritage assets that are not physical or material but hold cultural significance. It can have subclasses such as:
+- Oral Tradition
+- Folklore
+- Traditional Knowledge
+- Performing Arts
+- Rituals</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Keyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Language">
+        <rdfs:comment>Represents a language associated with an intangible cultural heritage asset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Location">
+        <rdfs:comment>Represents a location associated with a cultural heritage asset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Manuscript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Manuscript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#MusicGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#MusicGenre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#OralTradition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#OralTradition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#IntangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Painting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Painting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Performer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Performer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#PerformingArts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#PerformingArts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#IntangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#PreservationTechnique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#PreservationTechnique">
+        <rdfs:comment>Represents the methods and techniques used for preserving and maintaining cultural heritage assets over time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Rituals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Rituals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#IntangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Sculpture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Sculpture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#TangibleAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#TangibleAsset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#CulturalHeritageAsset"/>
+        <rdfs:comment>Represents physical or material cultural heritage assets that can be touched or observed. It can have subclasses such as:
+- Painting
+- Sculpture
+- Architecture
+- Artifact
+- Manuscript</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#TraditionalKnowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#TraditionalKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#IntangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Venue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/museITchassets#TangibleAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/museITchassets#VirtualRealityEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/museITchassets#VirtualRealityEnvironment">
+        <rdfs:comment>Represents the VR environment where cultural heritage assets are experienced or viewed</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

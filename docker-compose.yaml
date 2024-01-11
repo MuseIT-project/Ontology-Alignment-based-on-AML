@@ -1,0 +1,7 @@
+version: "1.0"
+services:
+  ontology-allignment-museit:
+#    Building the current directory
+    build: .
+    volumes:
+      - ./data_files_and_code:/data_files_and_code

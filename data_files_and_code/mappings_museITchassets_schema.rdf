@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://www.semanticweb.org/museITchassets</onto1>
+	<onto2>https://schema.org/</onto2>
+	<uri1>http://www.semanticweb.org/museITchassets</uri1>
+	<uri2>https://schema.org/</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Language"/>
+			<entity2 rdf:resource="https://schema.org/Language"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Sculpture"/>
+			<entity2 rdf:resource="https://schema.org/Sculpture"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Collection"/>
+			<entity2 rdf:resource="https://schema.org/Collection"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Painting"/>
+			<entity2 rdf:resource="https://schema.org/Painting"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Manuscript"/>
+			<entity2 rdf:resource="https://schema.org/Manuscript"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasPerformer"/>
+			<entity2 rdf:resource="https://schema.org/performer"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.855</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasLanguage"/>
+			<entity2 rdf:resource="https://schema.org/language"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.846</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasLocation"/>
+			<entity2 rdf:resource="https://schema.org/location"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.846</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasCreator"/>
+			<entity2 rdf:resource="https://schema.org/creator"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.835</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasCreationDate"/>
+			<entity2 rdf:resource="https://schema.org/dateCreated"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6465</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Venue"/>
+			<entity2 rdf:resource="https://schema.org/EventVenue"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6143</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#hasKeyword"/>
+			<entity2 rdf:resource="https://schema.org/keywords"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6105</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.semanticweb.org/museITchassets#Video"/>
+			<entity2 rdf:resource="https://schema.org/VideoObject"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5406</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>
