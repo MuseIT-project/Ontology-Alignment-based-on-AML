@@ -51,3 +51,7 @@ $ sudo docker compose up
  ```
 
 The above command will also automatically start the python script (inside the container) that contains the auto_alignment function. The function will apply the mappings from the AML output to the source ontology. The code will automatically save the updated ontology to the specified location.
+
+-----
+
+<p style="text-align:center">Copyright &copy;2024 - <a href="https://catalink.eu/"> Catalink Ltd </a> - All Rights Reserved </p>
